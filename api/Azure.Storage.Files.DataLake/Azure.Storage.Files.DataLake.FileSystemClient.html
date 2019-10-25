@@ -1,0 +1,1814 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileSystemClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileSystemClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Files.DataLake.FileSystemClient">
+  
+  
+  <h1 id="Azure_Storage_Files_DataLake_FileSystemClient" data-uid="Azure.Storage.Files.DataLake.FileSystemClient" class="text-break">Class FileSystemClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a> allows you to manipulate Azure
+Data Lake file systems and their directories and files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">FileSystemClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Files.DataLake.html">Azure.Storage.Files.DataLake</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Files.DataLake.dll</h6>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileSystemClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient__ctor" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor">FileSystemClient()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a>
+class for mocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FileSystemClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_System_Uri_Azure_Storage_Files_DataLake_DataLakeClientOptions_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor(System.Uri,Azure.Storage.Files.DataLake.DataLakeClientOptions)">FileSystemClient(Uri, DataLakeClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileSystemClient (Uri fileSystemUri, Azure.Storage.Files.DataLake.DataLakeClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">fileSystemUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a> referencing the share that includes the
+name of the account and the name of the file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.DataLake.DataLakeClientOptions.html">DataLakeClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Files_DataLake_DataLakeClientOptions_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Files.DataLake.DataLakeClientOptions)">FileSystemClient(Uri, TokenCredential, DataLakeClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileSystemClient (Uri fileSystemUri, Azure.Core.TokenCredential credential, Azure.Storage.Files.DataLake.DataLakeClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">fileSystemUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a> referencing the file system that includes the
+name of the account and the name of the file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The token credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.DataLake.DataLakeClientOptions.html">DataLakeClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Files_DataLake_DataLakeClientOptions_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Files.DataLake.DataLakeClientOptions)">FileSystemClient(Uri, StorageSharedKeyCredential, DataLakeClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileSystemClient (Uri fileSystemUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Files.DataLake.DataLakeClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">fileSystemUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a> referencing the share that includes the
+name of the account and the name of the file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The shared key credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.DataLake.DataLakeClientOptions.html">DataLakeClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_AccountName_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.AccountName*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_AccountName" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.AccountName">AccountName</h4>
+  <div class="markdown level1 summary"><p>Gets the Storage account name corresponding to the share client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string AccountName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_Name_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Name*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_Name" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the file system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_Pipeline_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Pipeline*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_Pipeline" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Pipeline">Pipeline</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a> transport pipeline used to send
+every request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Azure.Core.Pipeline.HttpPipeline Pipeline { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_Uri_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Uri*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_Uri" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Gets the file systems's primary <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a> endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_Create_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Create*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_Create_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Create(Azure.Storage.Files.DataLake.Models.PublicAccessType,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">Create(PublicAccessType, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Create_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">Create(PublicAccessType, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new file system
+under the specified account. If the container with the same name
+already exists, the operation fails.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemInfo&gt; Create (Azure.Storage.Files.DataLake.Models.PublicAccessType publicAccessType = Azure.Storage.Files.DataLake.Models.PublicAccessType.None, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html">PublicAccessType</a></td>
+        <td><span class="parametername">publicAccessType</span></td>
+        <td><p>Optionally specifies whether data in the container may be accessed
+publicly and the level of access. <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_Container">Container</a>
+specifies full public read access for container and blob data.
+Clients can enumerate blobs within the container via anonymous
+request, but cannot enumerate containers within the storage
+account.  <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_Blob">Blob</a> specifies public
+read access for blobs.  Blob data within this container can be
+read via anonymous request, but file system data is not available.
+Clients cannot enumerate blobs within the file system via anonymous
+request.  <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_None">None</a> specifies that the
+file system data is private to the account owner.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemInfo.html">FileSystemInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
+created container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_Create_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_CreateAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateAsync_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateAsync(Azure.Storage.Files.DataLake.Models.PublicAccessType,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateAsync(PublicAccessType, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_CreateAsync_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateAsync(PublicAccessType, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new file system
+under the specified account. If the file system with the same name
+already exists, the operation fails.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemInfo&gt;&gt; CreateAsync (Azure.Storage.Files.DataLake.Models.PublicAccessType publicAccessType = Azure.Storage.Files.DataLake.Models.PublicAccessType.None, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html">PublicAccessType</a></td>
+        <td><span class="parametername">publicAccessType</span></td>
+        <td><p>Optionally specifies whether data in the file system may be accessed
+publicly and the level of access. <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_Container">Container</a>
+specifies full public read access for file system and blob data.
+Clients can enumerate blobs within the file system via anonymous
+request, but cannot enumerate file system within the storage
+account.  <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_Blob">Blob</a> specifies public
+read access for blobs.  Blob data within this file system can be
+read via anonymous request, but file system data is not available.
+Clients cannot enumerate blobs within the file system via anonymous
+request.  <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PublicAccessType.html#Azure_Storage_Files_DataLake_Models_PublicAccessType_None">None</a> specifies that the
+file system data is private to the account owner.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemInfo.html">FileSystemInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the newly
+created file system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateAsync_Azure_Storage_Files_DataLake_Models_PublicAccessType_System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectory_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateDirectory*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectory_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateDirectory(System.String,System.Nullable{Azure.Storage.Files.DataLake.Models.PathHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">CreateDirectory(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectory_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">CreateDirectory(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</a> operation creates a directory in this file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create">https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.DirectoryClient&gt; CreateDirectory (string path, Nullable&lt;Azure.Storage.Files.DataLake.Models.PathHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, string permissions = null, string umask = null, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the directory to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathHttpHeaders.html">PathHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>Optional standard HTTP header properties that can be set for the
+new file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account. Sets POSIX access
+permissions for the file owner, the file owning group, and others. Each class may be granted read,
+write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit
+octal notation (e.g. 0766) are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">umask</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account.
+When creating a file or directory and the parent folder does not have a default ACL,
+the umask restricts the permissions of the file or directory to be created. The resulting
+permission is given by p bitwise-and ^u, where p is the permission and u is the umask. For example,
+if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is
+0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified
+in 4-digit octal notation (e.g. 0766).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the creation of this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+newly created page blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectory_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectoryAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateDirectoryAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectoryAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateDirectoryAsync(System.String,System.Nullable{Azure.Storage.Files.DataLake.Models.PathHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">CreateDirectoryAsync(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectoryAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">CreateDirectoryAsync(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</a> operation creates a directory in this file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create">https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.DirectoryClient&gt;&gt; CreateDirectoryAsync (string path, Nullable&lt;Azure.Storage.Files.DataLake.Models.PathHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, string permissions = null, string umask = null, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the directory to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathHttpHeaders.html">PathHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>Optional standard HTTP header properties that can be set for the
+new file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account. Sets POSIX access
+permissions for the file owner, the file owning group, and others. Each class may be granted read,
+write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit
+octal notation (e.g. 0766) are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">umask</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account.
+When creating a file or directory and the parent folder does not have a default ACL,
+the umask restricts the permissions of the file or directory to be created. The resulting
+permission is given by p bitwise-and ^u, where p is the permission and u is the umask. For example,
+if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is
+0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified
+in 4-digit octal notation (e.g. 0766).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the creation of this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+newly created page blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateDirectoryAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFile_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateFile*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFile_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateFile(System.String,System.Nullable{Azure.Storage.Files.DataLake.Models.PathHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">CreateFile(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_CreateFile_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">CreateFile(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</a> operation creates a file or directory.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create">https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.FileClient&gt; CreateFile (string path, Nullable&lt;Azure.Storage.Files.DataLake.Models.PathHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, string permissions = null, string umask = null, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the file to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathHttpHeaders.html">PathHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>Optional standard HTTP header properties that can be set for the
+new file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account. Sets POSIX access
+permissions for the file owner, the file owning group, and others. Each class may be granted read,
+write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit
+octal notation (e.g. 0766) are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">umask</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account.
+When creating a file or directory and the parent folder does not have a default ACL,
+the umask restricts the permissions of the file or directory to be created. The resulting
+permission is given by p bitwise-and ^u, where p is the permission and u is the umask. For example,
+if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is
+0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified
+in 4-digit octal notation (e.g. 0766).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the creation of this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+newly created page blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFile_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFileAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateFileAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFileAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.CreateFileAsync(System.String,System.Nullable{Azure.Storage.Files.DataLake.Models.PathHttpHeaders},System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">CreateFileAsync(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_CreateFileAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">CreateFileAsync(String, Nullable&lt;PathHttpHeaders&gt;, IDictionary&lt;String,String&gt;, String, String, DataLakeRequestConditions, CancellationToken)</a> creates a file in this file system</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create">https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/create</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.FileClient&gt;&gt; CreateFileAsync (string path, Nullable&lt;Azure.Storage.Files.DataLake.Models.PathHttpHeaders&gt; httpHeaders = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, string permissions = null, string umask = null, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the file to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathHttpHeaders.html">PathHttpHeaders</a>&gt;</td>
+        <td><span class="parametername">httpHeaders</span></td>
+        <td><p>Optional standard HTTP header properties that can be set for the
+new file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">permissions</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account. Sets POSIX access
+permissions for the file owner, the file owning group, and others. Each class may be granted read,
+write, or execute permission. The sticky bit is also supported. Both symbolic (rwxrw-rw-) and 4-digit
+octal notation (e.g. 0766) are supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">umask</span></td>
+        <td><p>Optional and only valid if Hierarchical Namespace is enabled for the account.
+When creating a file or directory and the parent folder does not have a default ACL,
+the umask restricts the permissions of the file or directory to be created. The resulting
+permission is given by p bitwise-and ^u, where p is the permission and u is the umask. For example,
+if p is 0777 and u is 0057, then the resulting permission is 0720. The default permission is
+0777 for a directory and 0666 for a file. The default umask is 0027. The umask must be specified
+in 4-digit octal notation (e.g. 0766).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the creation of this file or directory..</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+newly created page blob.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_CreateFileAsync_System_String_System_Nullable_Azure_Storage_Files_DataLake_Models_PathHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_String_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_Delete_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Delete*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_Delete_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.Delete(Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">Delete(DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Delete_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">Delete(DataLakeRequestConditions, CancellationToken)</a> operation marks the specified
+file system for deletion. The file system and any blobs contained
+within it are later deleted during garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/delete-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response Delete (Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the deletion of this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_Delete_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteAsync(Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">DeleteAsync(DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_DeleteAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">DeleteAsync(DataLakeRequestConditions, CancellationToken)</a> operation marks the specified
+file system for deletion. The file system and any blobs contained
+within it are later deleted during garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/delete-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteAsync (Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the deletion of this cofile systemntainer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectory_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteDirectory*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectory_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteDirectory(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">DeleteDirectory(String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectory_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">DeleteDirectory(String, DataLakeRequestConditions, CancellationToken)</a> operation marks the specified path
+deletion. The path is later deleted during
+garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response DeleteDirectory (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the directory to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add conditions on
+deleting this path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> on successfully deleting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectory_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectoryAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteDirectoryAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectoryAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteDirectoryAsync(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">DeleteDirectoryAsync(String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectoryAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">DeleteDirectoryAsync(String, DataLakeRequestConditions, CancellationToken)</a> deletes a directory in this file system.
+garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteDirectoryAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the directory to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add conditions on
+deleting this path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> on successfully deleting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteDirectoryAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFile_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteFile*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFile_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteFile(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">DeleteFile(String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_DeleteFile_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">DeleteFile(String, DataLakeRequestConditions, CancellationToken)</a> deletes a file in this file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response DeleteFile (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the file to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add conditions on
+deleting this path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> on successfully deleting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFile_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFileAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteFileAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFileAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.DeleteFileAsync(System.String,Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">DeleteFileAsync(String, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_DeleteFileAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">DeleteFileAsync(String, DataLakeRequestConditions, CancellationToken)</a> deletes a file in this file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/delete"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteFileAsync (string path, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the file to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add conditions on
+deleting this path.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> on successfully deleting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_DeleteFileAsync_System_String_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_GetDirectoryClient_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetDirectoryClient*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_GetDirectoryClient_System_String_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetDirectoryClient(System.String)">GetDirectoryClient(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a> object by appending
+<code data-dev-comment-type="paramref">directoryName</code> to the end of <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a>.  The
+new <a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a> uses the same request policy
+pipeline as the <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html">FileSystemClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Storage.Files.DataLake.DirectoryClient GetDirectoryClient (string directoryName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">directoryName</span></td>
+        <td><p>The name of the directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a></td>
+        <td><p>A new <a class="xref" href="Azure.Storage.Files.DataLake.DirectoryClient.html">DirectoryClient</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_GetFileClient_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetFileClient*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_GetFileClient_System_String_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetFileClient(System.String)">GetFileClient(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a> object by appending
+<code data-dev-comment-type="paramref">fileName</code> to the end of <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_Uri">Uri</a>.  The
+new <a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a> uses the same request policy
+pipeline as the <a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Storage.Files.DataLake.FileClient GetFileClient (string fileName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of the directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a></td>
+        <td><p>A new <a class="xref" href="Azure.Storage.Files.DataLake.FileClient.html">FileClient</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_GetProperties_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetProperties*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_GetProperties_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetProperties(Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">GetProperties(DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_GetProperties_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">GetProperties(DataLakeRequestConditions, CancellationToken)</a> operation returns all
+user-defined metadata and system properties for the specified
+file system. The data returned does not include the file system's
+list of blobs.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-container-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemItem&gt; GetProperties (Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">conditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on getting the file system's properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemItem.html">FileSystemItem</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+file system and its properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_GetProperties_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_GetPropertiesAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_GetPropertiesAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.GetPropertiesAsync(Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">GetPropertiesAsync(DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_GetPropertiesAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">GetPropertiesAsync(DataLakeRequestConditions, CancellationToken)</a> operation returns all
+user-defined metadata and system properties for the specified
+file system. The data returned does not include the file system's
+list of blobs.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-container-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemItem&gt;&gt; GetPropertiesAsync (Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions conditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">conditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on getting the file system's properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemItem.html">FileSystemItem</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+file system and its properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_GetPropertiesAsync_Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_ListPaths_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.ListPaths*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_ListPaths_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.ListPaths(System.Nullable{Azure.Storage.Files.DataLake.Models.GetPathsOptions},System.Threading.CancellationToken)">ListPaths(Nullable&lt;GetPathsOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_ListPaths_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken_">ListPaths(Nullable&lt;GetPathsOptions&gt;, CancellationToken)</a> operation returns an async sequence
+of paths in this file system.  Enumerating the paths may make
+multiple requests to the service while fetching all the values.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/list"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Pageable&lt;Azure.Storage.Files.DataLake.Models.PathItem&gt; ListPaths (Nullable&lt;Azure.Storage.Files.DataLake.Models.GetPathsOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.GetPathsOptions.html">GetPathsOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Specifies options for listing and filtering the paths.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Pageable-1.html">Pageable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathItem.html">PathItem</a>&gt;</td>
+        <td><p>An <a class="xref" href="../Azure/Azure.Pageable-1.html">Pageable&lt;T&gt;</a> of <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobItem.html">BlobItem</a>
+describing the paths in the file system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_ListPaths_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_ListPathsAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.ListPathsAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_ListPathsAsync_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.ListPathsAsync(System.Nullable{Azure.Storage.Files.DataLake.Models.GetPathsOptions},System.Threading.CancellationToken)">ListPathsAsync(Nullable&lt;GetPathsOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_ListPathsAsync_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken_">ListPathsAsync(Nullable&lt;GetPathsOptions&gt;, CancellationToken)</a> operation returns an async
+sequence of paths in this file system.  Enumerating the paths may
+make multiple requests to the service while fetching all the
+values.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/datalakestoragegen2/path/list"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncPageable&lt;Azure.Storage.Files.DataLake.Models.PathItem&gt; ListPathsAsync (Nullable&lt;Azure.Storage.Files.DataLake.Models.GetPathsOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.GetPathsOptions.html">GetPathsOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Specifies options for listing and filtering paths.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.PathItem.html">PathItem</a>&gt;</td>
+        <td><p>An <a class="xref" href="../Azure/Azure.AsyncPageable-1.html">AsyncPageable&lt;T&gt;</a> describing the
+paths in the file system.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_ListPathsAsync_System_Nullable_Azure_Storage_Files_DataLake_Models_GetPathsOptions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadata_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.SetMetadata*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.SetMetadata(System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">SetMetadata(IDictionary&lt;String,String&gt;, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">SetMetadata(IDictionary&lt;String,String&gt;, DataLakeRequestConditions, CancellationToken)</a> operation sets one or more
+user-defined name-value pairs for the specified file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-container-metadata"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemInfo&gt; SetMetadata (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Custom metadata to set for this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the deletion of this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemInfo.html">FileSystemInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadata_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadataAsync_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.SetMetadataAsync*"></a>
+  <h4 id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_" data-uid="Azure.Storage.Files.DataLake.FileSystemClient.SetMetadataAsync(System.Collections.Generic.IDictionary{System.String,System.String},Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions,System.Threading.CancellationToken)">SetMetadataAsync(IDictionary&lt;String,String&gt;, DataLakeRequestConditions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Files.DataLake.FileSystemClient.html#Azure_Storage_Files_DataLake_FileSystemClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken_">SetMetadataAsync(IDictionary&lt;String,String&gt;, DataLakeRequestConditions, CancellationToken)</a> operation sets one or more
+user-defined name-value pairs for the specified file system.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/set-container-metadata"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Files.DataLake.Models.FileSystemInfo&gt;&gt; SetMetadataAsync (System.Collections.Generic.IDictionary&lt;string,string&gt; metadata, Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Custom metadata to set for this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a></td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.DataLakeRequestConditions.html">DataLakeRequestConditions</a> to add
+conditions on the deletion of this file system.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Files.DataLake.Models/Azure.Storage.Files.DataLake.Models.FileSystemInfo.html">FileSystemInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Files_DataLake_FileSystemClient_SetMetadataAsync_System_Collections_Generic_IDictionary_System_String_System_String__Azure_Storage_Files_DataLake_Models_DataLakeRequestConditions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure/Azure.RequestFailedException.html">RequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Azure.Storage.Files.DataLake.DataLakeLeaseClientExtensions.html#Azure_Storage_Files_DataLake_DataLakeLeaseClientExtensions_GetLeaseClient_Azure_Storage_Files_DataLake_FileSystemClient_System_String_">DataLakeLeaseClientExtensions.GetLeaseClient(FileSystemClient, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
